@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Tree Demo</title>
+       <script src="http://d3js.org/d3.v2.js"></script>     
+        <style>
+            .link {
+                fill: none;
+                stroke: #ccc;
+                stroke-width: 1.5px;
+            }
+            div.tooltip {
+                position: absolute;
+                text-align: center;
+                width: 100px;
+                height: 10px;
+                padding: 8px;
+                font: 10px sans-serif;
+                background: #ffff99;
+                border: solid 1px #aaa;
+                border-radius: 8px;
+                pointer-events: none;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <div id="viz"></div>
+
+        <script type="text/javascript">
+
+            //JSON object with the data
+            var treeData = {"name" : "Root", "info" : "1", "children" : [
+                    {"name" : "A", "info" : "2" }, 
+                    {"name" : "B", "info" : "3" }, 
+                    {"name" : "C", "info" : "4", "children": [
+                    
+                            {"name" : "C1", "info" : "5" }, 
+                            {"name" : "C2", "info" : "6" }
+                        ]} 
+                ]};
+
+            // Create a svg canvas
+            var vis = d3.select("#viz").append("svg:svg")
+            .attr("width", 400)
+            .attr("height", 300)
+            .append("svg:g")
+            .attr("transform", "translate(40, 30)"); // shift everything to the right
+      
+            // Add tooltip div
+            var div = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 1e-6);
+
+            // Create a tree "canvas"
+            var tree = d3.layout.tree()
+            .size([300,150]);
+
+            var diagonal = d3.svg.diagonal();
+
+            // Preparing the data for the tree layout, convert data into an array of nodes
+            var nodes = tree.nodes(treeData);
+            // Create an array with all the links
+            var links = tree.links(nodes);
+
+            console.log("Raw:")
+            console.log(treeData)     
+            console.log("Nodes:")
+            console.log(nodes)
+            console.log("Links:" )
+            console.log(links)
+  
+            // Show me a link in raw and its path version
+            console.log(links[0])
+            console.log(diagonal(links[0]))
+
+            var link = vis.selectAll("pathlink")
+            .data(links)
+            .enter().append("svg:path")
+            .attr("class", "link")
+            .attr("d", diagonal)
+
+            var node = vis.selectAll("g.node")
+            .data(nodes)
+            .enter().append("svg:g")
+            .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+
+            // Add the dot at every node
+            node.append("svg:circle")
+            .on("mouseover", mouseover)
+            .on("mousemove", function(d){mousemove(d);})
+            .on("mouseout", mouseout)
+            .attr("fill","red")
+            .attr("r", 5.5);
+
+            node.append("svg:text")
+            .attr("dx", 8)
+            .attr("dy", 3)
+            .text(function(d) { return d.name; })
+
+            function mouseover() {
+                div.transition()
+                .duration(300)
+                .style("opacity", 1);
+            }
+
+            function mousemove(d) {
+                div
+                .text("Info about " + d.name + ":" + d.info)
+                .style("left", (d3.event.pageX ) + "px")
+                .style("top", (d3.event.pageY) + "px");
+            }
+
+            function mouseout() {
+                div.transition()
+                .duration(300)
+                .style("opacity", 1e-6);
+            }
+        </script>
+    </body>
+</html>

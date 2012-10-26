@@ -1,0 +1,183 @@
+body {
+  font: 14px Helvetica Neue;
+  text-rendering: optimizeLegibility;
+  margin-top: 1em;
+  overflow-y: scroll;
+}
+
+a {
+  color: steelblue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.topbar a {
+  margin-right: .5em;
+}
+
+.content {
+  position: relative;
+  margin-left: 240px;
+}
+
+.content img {
+  display: block;
+  margin: auto;
+}
+
+.sidebar {
+  position: absolute;
+  left: -240px;
+  width: 230px;
+  font-weight: 300;
+}
+
+.gallery {
+  position: relative;
+  left: -240px;
+  width: 970px;
+}
+
+.content .gallery img {
+  display: inline;
+  width: 226px;
+  height: 180px;
+  border: solid 2px #ccc;
+  margin-right: 10px;
+  margin-bottom: 8px;
+}
+
+.content .gallery a:hover img {
+  border-color: steelblue;
+}
+
+.list {
+  clear: left;
+  margin-top: 14px;
+}
+
+.list img {
+  float: left;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: .3em;
+}
+
+.sidebar {
+  color: #666;
+}
+
+.sidebar ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.sidebar li {
+  white-space: nowrap;
+  width: 230px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar h3 {
+  font-weight: 300;
+}
+
+.foot {
+  font-weight: 300;
+  margin-left: 240px;
+  padding-top: 3em;
+  width: 710px;
+  clear: both;
+}
+
+button {
+  background: #222 url(button-overlay.png) repeat-x;
+  font: 12px Helvetica Neue;
+  color: #fff;
+  text-shadow: 0 -1px 1px #222;
+  padding: 6px 10px 6px 10px;
+  border: 0;
+  border-bottom: 1px solid #222;
+  min-width: 80px;
+  -moz-border-radius: 5px;
+  -moz-box-shadow: 0 1px 3px #999;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 0 1px 3px #999;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.highlight {
+  font: 12px monospace;
+}
+
+.highlight pre {
+  overflow-x: auto;
+}
+
+button {
+  font: 14px Helvetica Neue;
+  background-color: #222;
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.25), rgba(255,255,255,.11));
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(255,255,255,.25)),color-stop(1, rgba(255,255,255,.11)));
+  background-image: -webkit-linear-gradient(rgba(255,255,255,.25), rgba(255,255,255,.11));
+  color: #fff;
+  text-rendering: optimizeLegibility;
+  text-shadow: 0 -1px 1px #222;
+  padding: 6px 10px 6px 10px;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #222;
+  margin: 0;
+  -moz-box-shadow: 0 1px 3px #999;
+  -webkit-box-shadow: 0 1px 3px #999;
+}
+
+button.first {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+button.last {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+button.active {
+  background-color: rgb(65,102,133);
+}
+
+button:hover {
+  background-color: steelblue;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    height: 70px;
+    padding: 8px;
+    font: 10px sans-serif;
+    background: #ffff99;
+    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+    background: rgba(255, 255, 255, .7);
+    border: solid 3px #000;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 10%;
+}
+
+.tooltip > p{
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}

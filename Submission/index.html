@@ -14,6 +14,28 @@ svg {
   stroke: #fff;
 }
 
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    padding: 8px;
+    font: 10px sans-serif;
+    background: #ffff99;
+    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+    background: rgba(255, 255, 255, .7);
+    border: solid 3px #000;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 10%;
+}
+
+.tooltip > p{
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
 </style>
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -35,12 +57,32 @@ var pie = d3.layout.pie()
     .sort(null)
     .value(function(d) { return d.counts; });
 
-var fullData;
+var tooltip = d3.select("body").append("div")
+              .attr("class", "tooltip")
+              .style("opacity", 1e-6);
+function mouseover() {
+    tooltip.transition()
+    .duration(300)
+    .style("opacity", 1);
+}
+
+function mousemove(d) {
+    //console.log(d);
+    tooltip
+    .html("<p><strong>"+d.data.name+":</strong><br />"+ d.data.counts +"</p>")
+    .style("left", (d3.event.pageX ) + "px")
+    .style("top", (d3.event.pageY) + "px");
+}
+
+function mouseout() {
+    tooltip.transition()
+    .duration(300)
+    .style("opacity", 1e-6);
+}
 
 d3.json("stackExchangeData.json", function(error, data) {
   color.domain(d3.keys(data[0]).filter(function(key) { return (key !== "name" && key !== "Tags"); }));
-  fullData = data;
-
+  
   data.forEach(function(d) {
     d.sites = color.domain().map(function(name) {
       return {name: name, counts: +d[name]};
@@ -79,6 +121,9 @@ d3.json("stackExchangeData.json", function(error, data) {
   svg.selectAll(".arc")
       .data(function(d) { return pie(d.sites); })
     .enter().append("path")
+      .on("mouseover", mouseover)
+      .on("mousemove", function(d){mousemove(d);})
+      .on("mouseout", mouseout)
       .attr("class", "arc")
       .attr("d", arc)
       .style("fill", function(d) { return color(d.data.name); });

@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>d3.js ~ Treemap</title>
+    <script src="http://d3js.org/d3.v2.min.js?2.8.1"></script>
+    <style type="text/css">
+
+    @import url("style.css?1.10.0");
+    .cell {
+      border: solid 1px white;
+      font: 10px sans-serif;
+      line-height: 12px;
+      overflow: hidden;
+      position: absolute;
+      text-indent: 2px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <div class="content">
+
+<h1 id='treemap'>Stack Exchange Site Visualizations<br />without Stackoverflow</h1>
+<div class='gallery' id='chart'>
+  <button class='first active' id='answers'>
+    Answers
+  </button><button id='questions'>
+    Questions
+  </button><button id='comments'>
+    Comments
+  </button>
+  <button class='last' id='tags'>
+    Tags
+  </button><p />
+</div>
+<script type='text/javascript'>
+var width = 1800,
+    height = 500,
+    color = d3.scale.category20c();
+
+var treemap = d3.layout.treemap()
+    .size([width, height])
+    .sticky(true)
+    .value(function(d) { return d.Answers; });
+
+function returnValue(d){
+  d3.select("")
+}
+
+var tooltip = d3.select("body").append("div")
+              .attr("class", "tooltip")
+              .style("opacity", 1e-6);
+function mouseover() {
+    tooltip.transition()
+    .duration(300)
+    .style("opacity", 1);
+}
+
+function mousemove(d) {
+    tooltip
+    .html("<p><strong>"+d.name+"</strong></p><p>Questions: " + d.Questions + "</p><p>Answers: " + d.Answers + "</p><p>Comments: "+ d.Comments + "</p><p>Tags: " + d.Tags + "</p>")
+    .style("left", (d3.event.pageX ) + "px")
+    .style("top", (d3.event.pageY) + "px");
+}
+
+function mouseout() {
+    tooltip.transition()
+    .duration(300)
+    .style("opacity", 1e-6);
+}
+
+var div = d3.select("#chart").append("div")
+    .style("position", "relative")
+    .style("width", width + "px")
+    .style("height", height + "px");
+
+d3.json("soTreeMap.json", function(json) {
+  div.data([json]).selectAll("div")
+      .data(treemap.nodes)
+    .enter().append("div")
+      .on("mouseover", mouseover)
+      .on("mousemove", function(d){mousemove(d);})
+      .on("mouseout", mouseout)
+      .attr("class", "cell")
+      .style("background", function(d) { return d.children ? null : color(d.name); })
+      .call(cell)
+      .text(function(d) { return d.children ? null : d.name; });
+
+  d3.select("#answers").on("click", function() {
+    div.selectAll("div")
+        .data(treemap.value(function(d) { return d.Answers; }))
+      .transition()
+        .duration(1500)
+        .style("background", function(d) { return d.children ? null : color(d.name); })
+        .call(cell);
+
+    d3.select("#answers").classed("active", true);
+    d3.select("#questions").classed("active", false);
+    d3.select("#comments").classed("active", false);
+    d3.select("#tags").classed("active", false);
+  });
+
+  d3.select("#questions").on("click", function() {
+    div.selectAll("div")
+        .data(treemap.value(function(d) { return d.Questions; }))
+      .transition()
+        .duration(1500)
+        .call(cell);
+
+    d3.select("#answers").classed("active", false);
+    d3.select("#questions").classed("active", true);
+    d3.select("#comments").classed("active", false);
+    d3.select("#tags").classed("active", false);
+  });
+
+  d3.select("#comments").on("click", function() {
+    div.selectAll("div")
+        .data(treemap.value(function(d) { return d.Comments; }))
+      .transition()
+        .duration(1500)
+        .call(cell);
+
+    d3.select("#answers").classed("active", false);
+    d3.select("#questions").classed("active", false);
+    d3.select("#comments").classed("active", true);
+    d3.select("#tags").classed("active", false);
+  });
+
+  d3.select("#tags").on("click", function() {
+    div.selectAll("div")
+        .data(treemap.value(function(d) { return d.Tags; }))
+      .transition()
+        .duration(1500)
+        .call(cell);
+
+    d3.select("#answers").classed("active", false);
+    d3.select("#questions").classed("active", false);
+    d3.select("#comments").classed("active", false);
+    d3.select("#tags").classed("active", true);
+  });
+});
+
+function cell() {
+  this
+      .style("left", function(d) { return d.x + "px"; })
+      .style("top", function(d) { return d.y + "px"; })
+      .style("width", function(d) { return Math.max(0, d.dx - 1) + "px"; })
+      .style("height", function(d) { return Math.max(0, d.dy - 1) + "px"; });
+}
+</script>
+
+
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
