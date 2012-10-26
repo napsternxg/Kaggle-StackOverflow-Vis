@@ -15,11 +15,31 @@ Following are some images of the growth of the CS and non CS sites on SE network
 
 
 
+Installation
+------------
+
+* Simply clone the repo onto your machine preferably inside the webroot of your webserver
+* If you have python installed you can simply run `python -m SimpleHTTPServer 8080` into the folder where you have downloaded the files and then you can access them on the internet using `http://localhost:8080/FileName`
+
+Other Exciting thing I stumbled upon while creating these visualizations:
+-------------------------------------------------------------------------
+
+* UK Univ Statistics using TreeMaps: http://keminglabs.com/ukuni/
+* Chord Network Visualization: http://bost.ocks.org/mike/uberdata/
+
+References:
+-----------
 * Visulizations using d3.js and Google Visualizations
 * All data used can be found at this public google spreadsheep: https://docs.google.com/spreadsheet/pub?key=0AipE5c521mI_dEhMUEVRQlJzM3BOT0h2QVJ0Wm9RbUE&output=html
 * For querying the data I have used the StackExchange Data Explorer at: http://data.stackexchange.com
-* The d3.js visualizations have been created using example given on the d3js examples page at: 
+* The d3.js visualizations have been created using example given on the d3js examples page at: https://github.com/mbostock/d3/wiki/Gallery
 * Tooltip concept taken from: https://gist.github.com/1016860#gistcomment-61316
 * The motion charts require the presence of a flash player
 * All d3.js charts and google visualizations require the presence of modern browsers which support SVG and HTML5
 * Most google visualizations have been build using the examples given at: http://code.google.com/apis/ajax/playground/?type=visualization#motion_chart
+* d3 API reference can be accessed at: https://github.com/mbostock/d3/wiki/API-Reference
+* Another interesting tool for querying and studying Stack Exchange Network data is: https://github.com/lucjon/Py-StackExchange/blob/master/demo/object_explorer.py
+* The treemap strucuture has been taken from: http://mbostock.github.com/d3/ex/treemap.html
+* The donut structure has been taken from: http://bl.ocks.org/3888852
+* For map color schemes I have used the colors schemes from: http://colorbrewer2.org/
+
