@@ -1,0 +1,115 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Kaggle-stackoverflow-vis</title>
+  <meta name="description" content="Submission for Stack Exchange Kaggle Visualization Competition">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Kaggle-stackoverflow-vis</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Submission for Stack Exchange Kaggle Visualization Competition</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/napsternxg/Kaggle-StackOverflow-Vis/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/napsternxg/Kaggle-StackOverflow-Vis/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/napsternxg/Kaggle-StackOverflow-Vis" class="code">View Kaggle-stackoverflow-vis on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>Kaggle Stack Overflow Visualization Competition Entry</h1>
+
+<p>The idea of this data research is to find trends among all the sites present on Stack Exchange Network. </p>
+
+<p>I have tried to take into account the various SE sites which are present and how much content is getting generated and how are the users using that content. A major focus of my study is how the stack network has grown since its inception and which sites have significantly contributed towards the growth of the SE Network.</p>
+
+<p>I have tried to visualize the date in terms of motion charts to see how the activity has changed on the SE network for each of the websites.</p>
+
+<p>In particular I have made a comparitive study of top sites among the 2 kinds of sites on SE network viz. computer science related and non-computer science related.</p>
+
+<p>The interesting realizations have been that the non-cs sites also generate an equal amount of traffic however there are many fluctuations in the same for non cs as compared to the usual cs sites on SE.</p>
+
+<p>Following are some images of the growth of the CS and non CS sites on SE network. [I have only considered the top sites in each category]:</p>
+
+<h2>Installation</h2>
+
+<ul>
+<li>Simply clone the repo onto your machine preferably inside the webroot of your webserver</li>
+<li>If you have python installed you can simply run <code>python -m SimpleHTTPServer 8080</code> into the folder where you have downloaded the files and then you can access them on the internet using <code>http://localhost:8080/FileName</code>
+</li>
+</ul><h2>Other Exciting thing I stumbled upon while creating these visualizations:</h2>
+
+<ul>
+<li>UK Univ Statistics using TreeMaps: <a href="http://keminglabs.com/ukuni/">http://keminglabs.com/ukuni/</a>
+</li>
+<li>Chord Network Visualization: <a href="http://bost.ocks.org/mike/uberdata/">http://bost.ocks.org/mike/uberdata/</a>
+</li>
+</ul><h2>References:</h2>
+
+<ul>
+<li>Visulizations using d3.js and Google Visualizations</li>
+<li>All data used can be found at this public google spreadsheep: <a href="https://docs.google.com/spreadsheet/pub?key=0AipE5c521mI_dEhMUEVRQlJzM3BOT0h2QVJ0Wm9RbUE&amp;output=html">https://docs.google.com/spreadsheet/pub?key=0AipE5c521mI_dEhMUEVRQlJzM3BOT0h2QVJ0Wm9RbUE&amp;output=html</a>
+</li>
+<li>For querying the data I have used the StackExchange Data Explorer at: <a href="http://data.stackexchange.com">http://data.stackexchange.com</a>
+</li>
+<li>The d3.js visualizations have been created using example given on the d3js examples page at: <a href="https://github.com/mbostock/d3/wiki/Gallery">https://github.com/mbostock/d3/wiki/Gallery</a>
+</li>
+<li>Tooltip concept taken from: <a href="https://gist.github.com/1016860#gistcomment-61316">https://gist.github.com/1016860#gistcomment-61316</a>
+</li>
+<li>The motion charts require the presence of a flash player</li>
+<li>All d3.js charts and google visualizations require the presence of modern browsers which support SVG and HTML5</li>
+<li>Most google visualizations have been build using the examples given at: <a href="http://code.google.com/apis/ajax/playground/?type=visualization#motion_chart">http://code.google.com/apis/ajax/playground/?type=visualization#motion_chart</a>
+</li>
+<li>d3 API reference can be accessed at: <a href="https://github.com/mbostock/d3/wiki/API-Reference">https://github.com/mbostock/d3/wiki/API-Reference</a>
+</li>
+<li>Another interesting tool for querying and studying Stack Exchange Network data is: <a href="https://github.com/lucjon/Py-StackExchange/blob/master/demo/object_explorer.py">https://github.com/lucjon/Py-StackExchange/blob/master/demo/object_explorer.py</a>
+</li>
+<li>The treemap strucuture has been taken from: <a href="http://mbostock.github.com/d3/ex/treemap.html">http://mbostock.github.com/d3/ex/treemap.html</a>
+</li>
+<li>The donut structure has been taken from: <a href="http://bl.ocks.org/3888852">http://bl.ocks.org/3888852</a>
+</li>
+<li>For map color schemes I have used the colors schemes from: <a href="http://colorbrewer2.org/">http://colorbrewer2.org/</a>
+</li>
+</ul>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/napsternxg" class="avatar"><img src="https://secure.gravatar.com/avatar/fc113da35551dd37a50d1ac751a3c218?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="48" height="48"/></a> <a href="https://github.com/napsternxg">napsternxg</a> maintains <a href="https://github.com/napsternxg/Kaggle-StackOverflow-Vis">Kaggle-stackoverflow-vis</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/napsternxg/Kaggle-StackOverflow-Vis/tarball/master" class="tar">tar</a><a href="https://github.com/napsternxg/Kaggle-StackOverflow-Vis/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
