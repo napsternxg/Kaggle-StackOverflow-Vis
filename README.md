@@ -1,6 +1,16 @@
 Kaggle Stack Overflow Visualization Competition Entry
 ======================================================
 
+All examples can be seen in their fully functional interactive form at: http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/
+
+* http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/StackExchangeSites.html
+* http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/googleMap.html
+* http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/index.html
+* http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/motionNonCS_SE.html
+* http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/motionQnA.html
+* http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/motionStackExchangeNetwork.html
+* http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/topTagsMotion.html
+
 The idea of this data research is to find trends among all the sites present on Stack Exchange Network. 
 
 I have tried to take into account the various SE sites which are present and how much content is getting generated and how are the users using that content. A major focus of my study is how the stack network has grown since its inception and which sites have significantly contributed towards the growth of the SE Network.
