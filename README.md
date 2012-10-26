@@ -1,7 +1,7 @@
 Kaggle Stack Overflow Visualization Competition Entry
 ======================================================
 
-All examples can be seen in their fully functional interactive form at: http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/
+All examples can be seen in their fully functional interactive form at the following links:
 
 * http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/StackExchangeSites.html
 * http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/googleMap.html
@@ -10,6 +10,10 @@ All examples can be seen in their fully functional interactive form at: http://e
 * http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/motionQnA.html
 * http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/motionStackExchangeNetwork.html
 * http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/topTagsMotion.html
+
+
+Introduction:
+-------------
 
 The idea of this data research is to find trends among all the sites present on Stack Exchange Network. 
 
@@ -26,6 +30,9 @@ The interesting realizations have been that the non-cs sites also generate an eq
 
 Following are some images of the growth of the CS and non CS sites on SE network. [I have only considered the top sites in each category]:
 
+**The interactive visualization for the below images can be found at: http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/motionNonCS_SE.html**
+
+
 Here are the data for the top Non CS sites on SE Network:
 
 !["Non CS Stack Exchange Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/NonCS_SEMonthGrowth.PNG "Non CS Stack Exchange Montly Growth")
@@ -37,6 +44,8 @@ Here are the data for the top Non CS sites on SE Network:
 !["Non CS Stack Exchange Total Score Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/NonCS_SEMonthGrowthSumScore.PNG "Non CS Stack Exchange Total Score Montly Growth")
 
 Also below are similar data for some of the top CS sites on SE Network:
+
+**The interactive visualization for the below images can be found at: http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/motionStackExchangeNetwork.html**
 
 !["CS Stack Exchange Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/SENetworkCountScoreGrowth.PNG "CS Stack Exchange Montly Growth")
 
@@ -53,6 +62,9 @@ I have also taken a closer look at the data hosted on the stack exchange network
 
 Here are some info graphics which clearly point out which are the most used websites on the network and how are the various types of interactions divided:
 
+**The interactive visualization for the below image can be found at: http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/index.html**
+
+
 !["Stack Exchange Site Wide Split"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/StackExchangeSiteWiseSplit.png "Stack Exchange Site Wide Split")
 
 The above info graphic tells us that the amount of interactions are more or less same on all sites. Some sites stand out as clear winners in terms of the ratio of the questions asked to answered.
@@ -60,6 +72,8 @@ The above info graphic tells us that the amount of interactions are more or less
 Below is a more comparitive study in terms of **Questions, Answers, Comments and Tags*** on each of the sites.
 
 **PS: I have purposely removed stack overflow from the following visualizations as its data is already a lot more in comparison to other websites hence to make the visualization easy to read. I have simply included all other sites except stack overflow**
+
+**An interactive visualization for the below images can be found at: http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/StackExchangeSites.html**
 
 !["Stack Exchange Site Wide Split for Questions"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/QuestionsStackExchange.PNG "Stack Exchange Site Wide Split for Questions")
 
@@ -74,6 +88,9 @@ Country Based Split of Users for Stack Overflow
 
 This is something which I feel is useful and is specific to stack overflow as I have tried to map the various countries based on the density of their user activity. The infographic shows that some countries are still not using stack overflow.
 
+**The interactive visualization for the below image can be found at: http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/googleMap.html**
+
+
 !["Stack Overflow Country Wide Split for Users"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/StackOverFlowCountryData.png "Stack Overflow Country Wide Split for Users")
 
 Top Tags on Stack Overflow
@@ -81,11 +98,29 @@ Top Tags on Stack Overflow
 
 Tags are important way of categorizing information on stack exchange sites so here I have tried to visualize the life cycle of the current top tags on  stack overflow:
 
+**The interactive visualization for the same can be found at: http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/topTagsMotion.html**
+
 !["Life Cycle of Top Tags on Stack Overflow"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/TopTagsCountGrowthMonthWise.PNG "Life Cycle of Top Tags on Stack Overflow")
 
 Also here is the total tag count in the current month. A more interesting infographic can be looked at my full code which shows a motion chart detailing how each tag grew on stack overflow.
 
 !["Life Cycle of Top Tags on Stack Overflow"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/TopTagsCountBar.PNG "Life Cycle of Top Tags on Stack Overflow")
+
+
+Questions and Answers on Stack Overflow
+---------------------------------------
+
+Here I have analyzed the growth of Questions and answers on stack overflow on a per month basis since its start.
+
+**An interactive visualization of the below images can be found at: http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/motionQnA.html**
+
+!["Stack Overflow Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/StackOverflowMonthWiseQnACount.PNG "CS Stack Exchange Montly Growth")
+
+!["Stack Overflow Average Score Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/StackOverflowMonthWiseQnAScore.PNG "CS Stack Exchange Average Score Montly Growth")
+
+!["Stack Overflow Questions and Answer Posts Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/StackOverflowMonthWiseQnACountScore.PNG "CS Stack Exchange Questions and Answer Posts Montly Growth")
+
+!["Stack Overflow Total Score Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/StackOverflowMonthWiseQnASumScore.PNG "CS Stack Exchange Total Score Montly Growth")
 
 
 
