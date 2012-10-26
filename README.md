@@ -7,6 +7,9 @@ I have tried to take into account the various SE sites which are present and how
 
 I have tried to visualize the date in terms of motion charts to see how the activity has changed on the SE network for each of the websites.
 
+Comparison of Computer Related and Non Computer Related Sites
+--------------------------------------------------------------
+
 In particular I have made a comparitive study of top sites among the 2 kinds of sites on SE network viz. computer science related and non-computer science related.
 
 The interesting realizations have been that the non-cs sites also generate an equal amount of traffic however there are many fluctuations in the same for non cs as compared to the usual cs sites on SE.
@@ -33,6 +36,44 @@ Also below are similar data for some of the top CS sites on SE Network:
 
 !["CS Stack Exchange Total Score Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/SENetworkSumScoreGrowth.PNG "CS Stack Exchange Total Score Montly Growth")
 
+Data of Stack Exchange Network
+-------------------------------
+
+I have also taken a closer look at the data hosted on the stack exchange network related to the density of interaction on its various sister sites.
+
+Here are some info graphics which clearly point out which are the most used websites on the network and how are the various types of interactions divided:
+
+!["Stack Exchange Site Wide Split"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/StackExchangeSiteWiseSplit.png "Stack Exchange Site Wide Split")
+
+The above info graphic tells us that the amount of interactions are more or less same on all sites. Some sites stand out as clear winners in terms of the ratio of the questions asked to answered.
+
+Below is a more comparitive study in terms of '''Questions, Answers, Comments and Tags''' on each of the sites.
+
+!["Stack Exchange Site Wide Split for Questions"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/QuestionsStackExchange.PNG "Stack Exchange Site Wide Split for Questions")
+
+!["Stack Exchange Site Wide Split for Answers"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/AnswersStackExchange.PNG "Stack Exchange Site Wide Split for Answers")
+
+!["Stack Exchange Site Wide Split for Comments"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/CommentsStackExchange.PNG "Stack Exchange Site Wide Split for Comments")
+
+!["Stack Exchange Site Wide Split for Tags"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/TagsStackExchange.PNG "Stack Exchange Site Wide Split for Tags")
+
+Country Based Split of Users for Stack Overflow
+-----------------------------------------------
+
+This is something which I feel is useful and is specific to stack overflow as I have tried to map the various countries based on the density of their user activity. The infographic shows that some countries are still not using stack overflow.
+
+!["Stack Overflow Country Wide Split for Users"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/StackOverFlowCountryData.png "Stack Overflow Country Wide Split for Users")
+
+Top Tags on Stack Overflow
+--------------------------
+
+Tags are important way of categorizing information on stack exchange sites so here I have tried to visualize the life cycle of the current top tags on  stack overflow:
+
+!["Life Cycle of Top Tags on Stack Overflow"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/TopTagsCountGrowthMonthWise.PNG "Life Cycle of Top Tags on Stack Overflow")
+
+Also here is the total tag count in the current month. A more interesting infographic can be looked at my full code which shows a motion chart detailing how each tag grew on stack overflow.
+
+!["Life Cycle of Top Tags on Stack Overflow"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/TopTagsCountBar.PNG "Life Cycle of Top Tags on Stack Overflow")
 
 
 
