@@ -47,7 +47,9 @@ Here are some info graphics which clearly point out which are the most used webs
 
 The above info graphic tells us that the amount of interactions are more or less same on all sites. Some sites stand out as clear winners in terms of the ratio of the questions asked to answered.
 
-Below is a more comparitive study in terms of '''Questions, Answers, Comments and Tags''' on each of the sites.
+Below is a more comparitive study in terms of **Questions, Answers, Comments and Tags*** on each of the sites.
+
+**PS: I have purposely removed stack overflow from the following visualizations as its data is already a lot more in comparison to other websites hence to make the visualization easy to read. I have simply included all other sites except stack overflow**
 
 !["Stack Exchange Site Wide Split for Questions"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/QuestionsStackExchange.PNG "Stack Exchange Site Wide Split for Questions")
 
