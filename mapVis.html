@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- A static HTML file that displays data visualizations based on the URL parameters.  See http://code.google.com/apis/visualization/ -->
+    <title>Google Visualization API</title>
+    <script type="text/javascript" src="//www.google.com/jsapi?autoload=%7B%22modules%22%3A%5B%7B%22name%22%3A%22visualization%22%2C%22version%22%3A%221.0%22%2C%22packages%22%3A%5B%22corechart%22%5D%7D%5D%7D"></script>
+    <style type="text/css">
+      body { margin: 0 }
+    </style>
+  </head>
+  <body>
+    <div id="chart_div"></div>
+    <script type="text/javascript">
+      var url = 'http://ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.html?json=%7B"chartType":"GeoChart","chartName":"Chart+1","state":%7B%7D,"view":%7B%7D,"options":%7B"titleTextStyle":%7B"fontSize":16%7D,"vAxes":%5B%7B"title":"Left+vertical+axis+title","useFormatFromData":true,"minValue":null,"viewWindowMode":"pretty","viewWindow":%7B"min":null,"max":null%7D,"maxValue":null%7D,%7B"useFormatFromData":true,"minValue":null,"viewWindowMode":"pretty","viewWindow":%7B"min":null,"max":null%7D,"maxValue":null%7D%5D,"title":"Chart+title","booleanRole":"certainty","backgroundColor":"%23ffffff","colors":%5B"%236fa8dc","%23073763","%2320124d"%5D,"displayMode":"regions","hAxis":%7B"title":"Horizontal+axis+title","useFormatFromData":true,"viewWindowMode":"pretty","viewWindow":%7B%7D%7D,"datalessRegionColor":"%23d9d9d9"%7D,"dataSourceUrl":"https:%5C/%5C/docs.google.com%5C/spreadsheet%5C/tq?key%3D0AipE5c521mI_dEhMUEVRQlJzM3BOT0h2QVJ0Wm9RbUE%26headers%3D1%26transpose%3D0%26gid%3D0%26range%3DA1:B101%26pub%3D1"%7D';
+      var container = document.getElementById('chart_div');
+      addLanguageSupportForGoogleLoad();
+      setContainerSize(container);
+      google.visualization.drawFromUrl(container);
+
+      function setContainerSize(container) {
+        var widthMatch = url.match('width[^:]*:[0-9]+');
+        var heightMatch = url.match('height[^:]*:[0-9]+');
+        if (widthMatch) {
+          var width = widthMatch[0].replace('width%22:','');
+          container.style.width = width + 'px';
+        }
+        if (heightMatch) {
+          var height = heightMatch[0].replace('height%22:','');
+          container.style.height = height + 'px';
+        }
+      }
+
+      function getLanguage() {
+        var language = url.match(/hl=[a-zA-Z\-_]*/) || null;
+        language = language && language.toString().replace(/hl=/, '');
+        return language;
+      }
+
+      function addLanguageSupportForGoogleLoad() {
+        var language = getLanguage();
+        if (!language) {
+          return;
+        }
+        var origGoogleLoad = google.load;
+        function load(module, version, options) {
+          options = options || {};
+          options['language'] = language;
+          origGoogleLoad(module, version, options);
+        }
+        google_exportSymbol('google.load', load);
+      }
+    </script>
+  </body>
+</html>

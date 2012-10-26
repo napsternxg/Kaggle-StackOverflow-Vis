@@ -1,0 +1,73 @@
+<!--
+You are free to copy and use this sample in accordance with the terms of the
+Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Google Visualization API Sample</title>
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load('visualization', '1', {packages: ['geochart']});
+
+    function drawVisualization() {
+       //var query = new google.visualization.Query('https://docs.google.com/spreadsheet/pub?key=0AipE5c521mI_dEhMUEVRQlJzM3BOT0h2QVJ0Wm9RbUE&single=true&gid=4&range=A1%3AB150&output=html');
+        var query = new google.visualization.Query("https://docs.google.com/spreadsheet/pub?key=0AipE5c521mI_dEhMUEVRQlJzM3BOT0h2QVJ0Wm9RbUE&single=true&gid=4&output=html");
+      // Send the query with a callback function.
+      query.send(handleQueryResponse);
+    }
+    
+    function handleQueryResponse(response) {
+      if (response.isError()) {
+        alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+        return;
+      }
+    
+      var data = response.getDataTable();
+      var dataView1 = new google.visualization.DataView(data);
+
+      // For Country Users
+      dataView1.setColumns([0, 1]);
+      var options1 = {
+        width: 1000,
+        height: 600,
+        backgroundColor: {fill: '636363'},
+        colorAxis: {colors: ['FA9FB5', 'C51B8A']}
+      };
+      var geochart1 = new google.visualization.GeoChart(
+          document.getElementById('visualization-1'));
+      geochart1.draw(dataView1, options1);
+
+
+      // For User Reputation
+      var dataView2 = new google.visualization.DataView(data);
+      dataView2.setColumns([0, 2]);
+      var options2 = {
+        width: 1000,
+        height: 600,
+        colorAxis: {colors: ['FC9272','DE2D26']}
+      };
+      var geochart2 = new google.visualization.GeoChart(
+          document.getElementById('visualization-2'));
+      geochart2.draw(dataView2, options2);
+
+    }
+    
+
+    google.setOnLoadCallback(drawVisualization);
+  </script>
+</head>
+<body style="font-family: Arial;border: 0 none;">
+<h1>Country Wise Stack Overflow Data Visualization</h1>
+<h2>User Count</h2>
+<div id="visualization-1"></div>
+<h2>Average User Reputations</h2>
+<div id="visualization-2"></div>
+<div id="visualization-3"></div>
+<div id="visualization-4"></div>
+
+</body>
+</html>
+​

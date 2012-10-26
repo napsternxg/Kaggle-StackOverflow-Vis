@@ -1,0 +1,485 @@
+[
+  {
+    "name": "StackOverflow", 
+    "Answers": "6568122", 
+    "Comments": "12500373", 
+    "Questions": "3272703", 
+    "Tags": "30378"
+  }, 
+  {
+    "name": "SuperUser", 
+    "Answers": "234419", 
+    "Comments": "406685", 
+    "Questions": "126630", 
+    "Tags": "5075"
+  }, 
+  {
+    "name": "ServerFault", 
+    "Answers": "239392", 
+    "Comments": "367336", 
+    "Questions": "117807", 
+    "Tags": "4980"
+  }, 
+  {
+    "name": "Mathematics", 
+    "Answers": "92408", 
+    "Comments": "315803", 
+    "Questions": "57734", 
+    "Tags": "616"
+  }, 
+  {
+    "name": "Ubuntu", 
+    "Answers": "80042", 
+    "Comments": "152958", 
+    "Questions": "54727", 
+    "Tags": "2209"
+  }, 
+  {
+    "name": "Meta", 
+    "Answers": "71221", 
+    "Comments": "278565", 
+    "Questions": "37357", 
+    "Tags": "1382"
+  }, 
+  {
+    "name": "TeX", 
+    "Answers": "35789", 
+    "Comments": "114079", 
+    "Questions": "21278", 
+    "Tags": "816"
+  }, 
+  {
+    "name": "Gaming", 
+    "Answers": "38406", 
+    "Comments": "78594", 
+    "Questions": "21179", 
+    "Tags": "1874"
+  }, 
+  {
+    "name": "WordPress", 
+    "Answers": "29489", 
+    "Comments": "62189", 
+    "Questions": "19343", 
+    "Tags": "828"
+  }, 
+  {
+    "name": "Programmers", 
+    "Answers": "93134", 
+    "Comments": "201618", 
+    "Questions": "19008", 
+    "Tags": "1747"
+  }, 
+  {
+    "name": "Apple", 
+    "Answers": "31122", 
+    "Comments": "54793", 
+    "Questions": "17367", 
+    "Tags": "1047"
+  }, 
+  {
+    "name": "English", 
+    "Answers": "47135", 
+    "Comments": "116777", 
+    "Questions": "16596", 
+    "Tags": "445"
+  }, 
+  {
+    "name": "SharePoint", 
+    "Answers": "21956", 
+    "Comments": "32818", 
+    "Questions": "14539", 
+    "Tags": "778"
+  }, 
+  {
+    "name": "Drupal Answers", 
+    "Answers": "18058", 
+    "Comments": "30973", 
+    "Questions": "13922", 
+    "Tags": "567"
+  }, 
+  {
+    "name": "Unix and Linux", 
+    "Answers": "25075", 
+    "Comments": "50605", 
+    "Questions": "13399", 
+    "Tags": "1334"
+  }, 
+  {
+    "name": "Stats", 
+    "Answers": "17488", 
+    "Comments": "53732", 
+    "Questions": "11037", 
+    "Tags": "785"
+  }, 
+  {
+    "name": "Webmasters", 
+    "Answers": "17696", 
+    "Comments": "27151", 
+    "Questions": "9803", 
+    "Tags": "696"
+  }, 
+  {
+    "name": "Physics", 
+    "Answers": "18735", 
+    "Comments": "59582", 
+    "Questions": "9600", 
+    "Tags": "653"
+  }, 
+  {
+    "name": "GIS", 
+    "Answers": "16907", 
+    "Comments": "35116", 
+    "Questions": "9446", 
+    "Tags": "846"
+  }, 
+  {
+    "name": "GameDev", 
+    "Answers": "19773", 
+    "Comments": "46720", 
+    "Questions": "8908", 
+    "Tags": "733"
+  }, 
+  {
+    "name": "Electronics", 
+    "Answers": "21731", 
+    "Comments": "57644", 
+    "Questions": "8875", 
+    "Tags": "941"
+  }, 
+  {
+    "name": "Android Enthusiasts", 
+    "Answers": "12283", 
+    "Comments": "23593", 
+    "Questions": "8052", 
+    "Tags": "847"
+  }, 
+  {
+    "name": "WebApps", 
+    "Answers": "13635", 
+    "Comments": "16587", 
+    "Questions": "8051", 
+    "Tags": "824"
+  }, 
+  {
+    "name": "Database Administrators", 
+    "Answers": "11657", 
+    "Comments": "28286", 
+    "Questions": "6631", 
+    "Tags": "451"
+  }, 
+  {
+    "name": "Cooking", 
+    "Answers": "16703", 
+    "Comments": "28828", 
+    "Questions": "5939", 
+    "Tags": "707"
+  }, 
+  {
+    "name": "Photography", 
+    "Answers": "17148", 
+    "Comments": "37780", 
+    "Questions": "5568", 
+    "Tags": "989"
+  }, 
+  {
+    "name": "Science Fiction and Fantasy", 
+    "Answers": "10580", 
+    "Comments": "30167", 
+    "Questions": "5310", 
+    "Tags": "949"
+  }, 
+  {
+    "name": "Jewish Life and Learning", 
+    "Answers": "10785", 
+    "Comments": "33779", 
+    "Questions": "5031", 
+    "Tags": "685"
+  }, 
+  {
+    "name": "User Experience", 
+    "Answers": "16033", 
+    "Comments": "29041", 
+    "Questions": "4633", 
+    "Tags": "541"
+  }, 
+  {
+    "name": "Home Improvement", 
+    "Answers": "9420", 
+    "Comments": "19271", 
+    "Questions": "4546", 
+    "Tags": "499"
+  }, 
+  {
+    "name": "IT Security", 
+    "Answers": "10739", 
+    "Comments": "22966", 
+    "Questions": "4095", 
+    "Tags": "373"
+  }, 
+  {
+    "name": "TheoreticalComputerScience", 
+    "Answers": "6476", 
+    "Comments": "24790", 
+    "Questions": "3329", 
+    "Tags": "384"
+  }, 
+  {
+    "name": "Role-playing Games", 
+    "Answers": "10803", 
+    "Comments": "18961", 
+    "Questions": "3152", 
+    "Tags": "551"
+  }, 
+  {
+    "name": "Skeptics", 
+    "Answers": "3943", 
+    "Comments": "28749", 
+    "Questions": "2760", 
+    "Tags": "533"
+  }, 
+  {
+    "name": "Bicycles", 
+    "Answers": "7187", 
+    "Comments": "14659", 
+    "Questions": "2104", 
+    "Tags": "327"
+  }, 
+  {
+    "name": "MetaSuperUser", 
+    "Answers": "2900", 
+    "Comments": "11075", 
+    "Questions": "1635", 
+    "Tags": "220"
+  }, 
+  {
+    "name": "MathematicsMeta", 
+    "Answers": "2602", 
+    "Comments": "14449", 
+    "Questions": "1459", 
+    "Tags": "120"
+  }, 
+  {
+    "name": "GamingMeta", 
+    "Answers": "3028", 
+    "Comments": "12258", 
+    "Questions": "1348", 
+    "Tags": "188"
+  }, 
+  {
+    "name": "StackApps", 
+    "Answers": "1558", 
+    "Comments": "6651", 
+    "Questions": "1271", 
+    "Tags": "202"
+  }, 
+  {
+    "name": "UbuntuMeta", 
+    "Answers": "2067", 
+    "Comments": "4414", 
+    "Questions": "1208", 
+    "Tags": "170"
+  }, 
+  {
+    "name": "ProgrammersMeta", 
+    "Answers": "2316", 
+    "Comments": "8868", 
+    "Questions": "1095", 
+    "Tags": "164"
+  }, 
+  {
+    "name": "MetaServerFault", 
+    "Answers": "2266", 
+    "Comments": "5852", 
+    "Questions": "904", 
+    "Tags": "152"
+  }, 
+  {
+    "name": "EnglishMeta", 
+    "Answers": "1697", 
+    "Comments": "5149", 
+    "Questions": "882", 
+    "Tags": "141"
+  }, 
+  {
+    "name": "TeXMeta", 
+    "Answers": "1693", 
+    "Comments": "5455", 
+    "Questions": "767", 
+    "Tags": "114"
+  }, 
+  {
+    "name": "Science Fiction and FantasyMeta", 
+    "Answers": "1307", 
+    "Comments": "4265", 
+    "Questions": "577", 
+    "Tags": "126"
+  }, 
+  {
+    "name": "SkepticsMeta", 
+    "Answers": "1149", 
+    "Comments": "3647", 
+    "Questions": "535", 
+    "Tags": "111"
+  }, 
+  {
+    "name": "PhotographyMeta", 
+    "Answers": "1733", 
+    "Comments": "4116", 
+    "Questions": "483", 
+    "Tags": "102"
+  }, 
+  {
+    "name": "AppleMeta", 
+    "Answers": "776", 
+    "Comments": "2138", 
+    "Questions": "444", 
+    "Tags": "113"
+  }, 
+  {
+    "name": "TheoreticalComputerScienceMeta", 
+    "Answers": "1048", 
+    "Comments": "4519", 
+    "Questions": "424", 
+    "Tags": "78"
+  }, 
+  {
+    "name": "PhysicsMeta", 
+    "Answers": "828", 
+    "Comments": "2906", 
+    "Questions": "418", 
+    "Tags": "86"
+  }, 
+  {
+    "name": "CookingMeta", 
+    "Answers": "1038", 
+    "Comments": "3287", 
+    "Questions": "411", 
+    "Tags": "78"
+  }, 
+  {
+    "name": "Jewish Life and LearningMeta", 
+    "Answers": "743", 
+    "Comments": "2800", 
+    "Questions": "405", 
+    "Tags": "115"
+  }, 
+  {
+    "name": "Role-playing GamesMeta", 
+    "Answers": "1113", 
+    "Comments": "3285", 
+    "Questions": "383", 
+    "Tags": "90"
+  }, 
+  {
+    "name": "Electronics Meta", 
+    "Answers": "819", 
+    "Comments": "2908", 
+    "Questions": "364", 
+    "Tags": "103"
+  }, 
+  {
+    "name": "StatsMeta", 
+    "Answers": "822", 
+    "Comments": "2509", 
+    "Questions": "363", 
+    "Tags": "84"
+  }, 
+  {
+    "name": "Drupal AnswersMeta", 
+    "Answers": "526", 
+    "Comments": "895", 
+    "Questions": "350", 
+    "Tags": "84"
+  }, 
+  {
+    "name": "WordPress Meta", 
+    "Answers": "780", 
+    "Comments": "2155", 
+    "Questions": "336", 
+    "Tags": "85"
+  }, 
+  {
+    "name": "WebAppsMeta", 
+    "Answers": "557", 
+    "Comments": "1115", 
+    "Questions": "335", 
+    "Tags": "88"
+  }, 
+  {
+    "name": "Android EnthusiastsMeta", 
+    "Answers": "580", 
+    "Comments": "1417", 
+    "Questions": "327", 
+    "Tags": "86"
+  }, 
+  {
+    "name": "User ExperienceMeta", 
+    "Answers": "608", 
+    "Comments": "1679", 
+    "Questions": "315", 
+    "Tags": "98"
+  }, 
+  {
+    "name": "Unix and LinuxMeta", 
+    "Answers": "615", 
+    "Comments": "1303", 
+    "Questions": "296", 
+    "Tags": "77"
+  }, 
+  {
+    "name": "WebmastersMeta", 
+    "Answers": "496", 
+    "Comments": "912", 
+    "Questions": "270", 
+    "Tags": "67"
+  }, 
+  {
+    "name": "IT SecurityMeta", 
+    "Answers": "560", 
+    "Comments": "1127", 
+    "Questions": "248", 
+    "Tags": "67"
+  }, 
+  {
+    "name": "GameDevMeta", 
+    "Answers": "546", 
+    "Comments": "1081", 
+    "Questions": "246", 
+    "Tags": "65"
+  }, 
+  {
+    "name": "GISMeta", 
+    "Answers": "545", 
+    "Comments": "1230", 
+    "Questions": "239", 
+    "Tags": "72"
+  }, 
+  {
+    "name": "Database AdministratorsMeta", 
+    "Answers": "472", 
+    "Comments": "1379", 
+    "Questions": "224", 
+    "Tags": "65"
+  }, 
+  {
+    "name": "SharePointMeta", 
+    "Answers": "341", 
+    "Comments": "711", 
+    "Questions": "197", 
+    "Tags": "77"
+  }, 
+  {
+    "name": "Home ImprovementMeta", 
+    "Answers": "385", 
+    "Comments": "635", 
+    "Questions": "194", 
+    "Tags": "65"
+  }, 
+  {
+    "name": "BicyclesMeta", 
+    "Answers": "494", 
+    "Comments": "1231", 
+    "Questions": "190", 
+    "Tags": "80"
+  }
+]
