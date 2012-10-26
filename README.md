@@ -1,6 +1,14 @@
 Kaggle Stack Overflow Visualization Competition Entry
 ======================================================
 
+
+Watch in action:
+----------------
+
+**Please vote for my entry at: https://www.kaggle.com/c/predict-closed-questions-on-stack-overflow/prospector?prospectId=213#213**
+
+**Visit the Github Page for this visualization at: http://napsternxg.github.com/Kaggle-StackOverflow-Vis/**
+
 All examples can be seen in their fully functional interactive form at the following links:
 
 * http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/StackExchangeSites.html
