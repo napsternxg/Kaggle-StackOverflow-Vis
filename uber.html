@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Uber Rides by Neighborhood</title>
+<title>Stack Overflow Tag Relationships</title>
 <style>
 
 @import url(../style.css?20120427);
@@ -26,21 +26,6 @@ path.chord {
 
 </style>
 
-<header>
-  <aside>January 9, 2012</aside>
-  <a href="../" rel="author">Mike Bostock</a>
-</header>
-
-<h1>Uber Rides by Neighborhood</h1>
-
-<aside>Mouseover to focus on rides to or from a single neighbor&shy;hood.
-
-<p>The thickness of links be&shy;tween neighborhoods encodes the relative frequency of rides between two neighborhoods: thicker links represent more frequent rides.
-
-<p>Links are directed: for exam&shy;ple, while 2.2% of rides go from South of Market to Downtown, only 1.2% go in the opposite direction. Links are colored by the more fre&shy;quent origin.
-
-<p>Scroll down for more!
-
 <p>Built with <a href="http://d3js.org/">d3.js</a>.</aside>
 
 <script src="http://d3js.org/d3.v2.min.js?2.8.1"></script>
@@ -62,6 +47,8 @@ var layout = d3.layout.chord()
     .sortSubgroups(d3.descending)
     .sortChords(d3.ascending);
 
+var color = d3.scale.category10();
+
 var path = d3.svg.chord()
     .radius(innerRadius);
 
@@ -75,7 +62,9 @@ var svg = d3.select("body").append("svg")
 svg.append("circle")
     .attr("r", outerRadius);
 
-d3.csv("cities.csv", function(cities) {
+d3.csv("topTags.csv", function(cities) {
+
+  color.domain(d3.keys(cities[0]));
   d3.json("matrix.json", function(matrix) {
 
     // Compute the chord layout.
@@ -97,7 +86,7 @@ d3.csv("cities.csv", function(cities) {
     var groupPath = group.append("path")
         .attr("id", function(d, i) { return "group" + i; })
         .attr("d", arc)
-        .style("fill", function(d, i) { return cities[i].color; });
+        .style("fill", function(d, i) { return color(cities[i].name); });
 
     // Add a text label.
     var groupText = group.append("text")
@@ -117,7 +106,7 @@ d3.csv("cities.csv", function(cities) {
         .data(layout.chords)
       .enter().append("path")
         .attr("class", "chord")
-        .style("fill", function(d) { return cities[d.source.index].color; })
+        .style("fill", function(d) { return color(cities[d.source.index].name); })
         .attr("d", path);
 
     // Add an elaborate mouseover title for each chord.
