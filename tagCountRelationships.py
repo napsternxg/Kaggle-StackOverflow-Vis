@@ -39,7 +39,7 @@ with open('tagRelations.json', 'wb') as fp:
     json.dump(sortedTags, fp, indent=4)
 
 with open('matrix.json', 'wb') as fp:
-    topNum = 10
+    topNum = 20
     topTags = []
     iterD = od.iterkeys()
     matrix = [[0 for y in range(topNum)] for x in range(topNum)]
@@ -50,7 +50,8 @@ with open('matrix.json', 'wb') as fp:
     
     for i in range(topNum):
         for j in range(topNum):
-            if i != j:
+            if i != j and sortedTags[topTags[i]].has_key(topTags[j]):
+                print "sortedTags[%s][%s]" %(topTags[i], topTags[j])
                 matrix[i][j] += sortedTags[topTags[i]][topTags[j]]
 
     json.dump(matrix, fp, indent=4)

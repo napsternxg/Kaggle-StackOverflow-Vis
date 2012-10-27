@@ -86,7 +86,8 @@ d3.csv("topTags.csv", function(cities) {
     var groupPath = group.append("path")
         .attr("id", function(d, i) { return "group" + i; })
         .attr("d", arc)
-        .style("fill", function(d, i) { return color(cities[i].name); });
+        .style("fill", function(d, i) { return color(cities[i].name); })
+        .style("stroke", "black");
 
     // Add a text label.
     var groupText = group.append("text")
@@ -107,6 +108,7 @@ d3.csv("topTags.csv", function(cities) {
       .enter().append("path")
         .attr("class", "chord")
         .style("fill", function(d) { return color(cities[d.source.index].name); })
+        .style("stroke", "black")
         .attr("d", path);
 
     // Add an elaborate mouseover title for each chord.
