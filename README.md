@@ -2,15 +2,16 @@ Kaggle Stack Overflow Visualization Competition Entry
 ======================================================
 
 
-Watch in action:
-----------------
+Supporting Resources:
+---------------------
 
-**Please vote for my entry at: https://www.kaggle.com/c/predict-closed-questions-on-stack-overflow/prospector?prospectId=213#213**
+**All Code: https://github.com/napsternxg/Kaggle-StackOverflow-Vis**
 
-**Visit the Github Page for this visualization at: http://napsternxg.github.com/Kaggle-StackOverflow-Vis/**
+**Github Page: http://napsternxg.github.com/Kaggle-StackOverflow-Vis/**
 
 All examples can be seen in their fully functional interactive form at the following links:
 
+* http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/topTagRelations.html
 * http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/StackExchangeSites.html
 * http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/googleMap.html
 * http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/index.html
@@ -29,39 +30,15 @@ I have tried to take into account the various SE sites which are present and how
 
 I have tried to visualize the date in terms of motion charts to see how the activity has changed on the SE network for each of the websites.
 
-Comparison of Computer Related and Non Computer Related Sites
---------------------------------------------------------------
+Relationship between top 10 tags:
+---------------------------------
+Working example at: http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/topTagRelations.html
 
-In particular I have made a comparitive study of top sites among the 2 kinds of sites on SE network viz. computer science related and non-computer science related.
+!["Top 10 Tag Relationships"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/TagRelationShip.png "Top 10 Tag Relationships")
 
-The interesting realizations have been that the non-cs sites also generate an equal amount of traffic however there are many fluctuations in the same for non cs as compared to the usual cs sites on SE.
+!["Top 20 Tag Relationships"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/Top20TagRelationShip.png "Top 20 Tag Relationships")
 
-Following are some images of the growth of the CS and non CS sites on SE network. [I have only considered the top sites in each category]:
-
-**The interactive visualization for the below images can be found at: http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/motionNonCS_SE.html**
-
-
-Here are the data for the top Non CS sites on SE Network:
-
-!["Non CS Stack Exchange Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/NonCS_SEMonthGrowth.PNG "Non CS Stack Exchange Montly Growth")
-
-!["Non CS Stack Exchange Average Score Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/NonCS_SEMonthGrowthAvgScore.PNG "Non CS Stack Exchange Average Score Montly Growth")
-
-!["Non CS Stack Exchange Questions and Answer Posts Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/NonCS_SEMonthGrowthQnA.PNG "Non CS Stack Exchange Questions and Answer Posts Montly Growth")
-
-!["Non CS Stack Exchange Total Score Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/NonCS_SEMonthGrowthSumScore.PNG "Non CS Stack Exchange Total Score Montly Growth")
-
-Also below are similar data for some of the top CS sites on SE Network:
-
-**The interactive visualization for the below images can be found at: http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/motionStackExchangeNetwork.html**
-
-!["CS Stack Exchange Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/SENetworkCountScoreGrowth.PNG "CS Stack Exchange Montly Growth")
-
-!["CS Stack Exchange Average Score Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/SENetworkAverageScoreGrowth.PNG "CS Stack Exchange Average Score Montly Growth")
-
-!["CS Stack Exchange Questions and Answer Posts Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/SENetworkQnAGrowth.PNG "CS Stack Exchange Questions and Answer Posts Montly Growth")
-
-!["CS Stack Exchange Total Score Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/SENetworkSumScoreGrowth.PNG "CS Stack Exchange Total Score Montly Growth")
+As we can see tags of similar technology have a very high relationship e.g. **php-mysql, HTML-jquery-javascript, objective-c > iphone and c#-asp.net**
 
 Data of Stack Exchange Network
 -------------------------------
@@ -101,6 +78,41 @@ This is something which I feel is useful and is specific to stack overflow as I 
 
 !["Stack Overflow Country Wide Split for Users"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/StackOverFlowCountryData.png "Stack Overflow Country Wide Split for Users")
 
+Comparison of Computer Related and Non Computer Related Sites
+--------------------------------------------------------------
+
+In particular I have made a comparitive study of top sites among the 2 kinds of sites on SE network viz. computer science related and non-computer science related.
+
+The interesting realizations have been that the non-cs sites also generate an equal amount of traffic however there are many fluctuations in the same for non cs as compared to the usual cs sites on SE.
+
+Following are some images of the growth of the CS and non CS sites on SE network. [I have only considered the top sites in each category]:
+
+**The interactive visualization for the below images can be found at: http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/motionNonCS_SE.html**
+
+
+Here are the data for the top Non CS sites on SE Network:
+
+!["Non CS Stack Exchange Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/NonCS_SEMonthGrowth.PNG "Non CS Stack Exchange Montly Growth")
+
+!["Non CS Stack Exchange Average Score Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/NonCS_SEMonthGrowthAvgScore.PNG "Non CS Stack Exchange Average Score Montly Growth")
+
+!["Non CS Stack Exchange Questions and Answer Posts Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/NonCS_SEMonthGrowthQnA.PNG "Non CS Stack Exchange Questions and Answer Posts Montly Growth")
+
+!["Non CS Stack Exchange Total Score Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/NonCS_SEMonthGrowthSumScore.PNG "Non CS Stack Exchange Total Score Montly Growth")
+
+Also below are similar data for some of the top CS sites on SE Network:
+
+**The interactive visualization for the below images can be found at: http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/motionStackExchangeNetwork.html**
+
+!["CS Stack Exchange Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/SENetworkCountScoreGrowth.PNG "CS Stack Exchange Montly Growth")
+
+!["CS Stack Exchange Average Score Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/SENetworkAverageScoreGrowth.PNG "CS Stack Exchange Average Score Montly Growth")
+
+!["CS Stack Exchange Questions and Answer Posts Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/SENetworkQnAGrowth.PNG "CS Stack Exchange Questions and Answer Posts Montly Growth")
+
+!["CS Stack Exchange Total Score Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/SENetworkSumScoreGrowth.PNG "CS Stack Exchange Total Score Montly Growth")
+
+
 Top Tags on Stack Overflow
 --------------------------
 
@@ -129,9 +141,6 @@ Here I have analyzed the growth of Questions and answers on stack overflow on a 
 !["Stack Overflow Questions and Answer Posts Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/StackOverflowMonthWiseQnACountScore.PNG "CS Stack Exchange Questions and Answer Posts Montly Growth")
 
 !["Stack Overflow Total Score Montly Growth"](https://github.com/napsternxg/Kaggle-StackOverflow-Vis/raw/master/Images/StackOverflowMonthWiseQnASumScore.PNG "CS Stack Exchange Total Score Montly Growth")
-
-
-
 
 
 Installation
