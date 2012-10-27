@@ -30,7 +30,7 @@ I have tried to take into account the various SE sites which are present and how
 
 I have tried to visualize the date in terms of motion charts to see how the activity has changed on the SE network for each of the websites.
 
-Relationship between top 10 tags:
+Relationship between top tags:
 ---------------------------------
 Working example at: http://ec2-50-17-90-141.compute-1.amazonaws.com/Kaggle/topTagRelations.html
 
