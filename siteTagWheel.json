@@ -1,0 +1,575 @@
+{
+    "name": "Stack Exchange", 
+    "children": [
+        {
+            "name": "Server Fault", 
+            "children": [
+                {
+                    "colour": "#ff7f0e", 
+                    "name": "linux", 
+                    "size": 16898
+                }, 
+                {
+                    "colour": "#ff7f0e", 
+                    "name": "apache2", 
+                    "size": 11153
+                }, 
+                {
+                    "colour": "#bcbd22", 
+                    "name": "windows", 
+                    "size": 7076
+                }, 
+                {
+                    "colour": "#17becf", 
+                    "name": "ubuntu", 
+                    "size": 6747
+                }, 
+                {
+                    "colour": "#e377c2", 
+                    "name": "windows-server-2008", 
+                    "size": 6321
+                }
+            ]
+        }, 
+        {
+            "name": "Super User", 
+            "children": [
+                {
+                    "colour": "#ff7f0e", 
+                    "name": "windows-7", 
+                    "size": 20892
+                }, 
+                {
+                    "colour": "#e377c2", 
+                    "name": "windows", 
+                    "size": 14931
+                }, 
+                {
+                    "colour": "#2ca02c", 
+                    "name": "linux", 
+                    "size": 14518
+                }, 
+                {
+                    "colour": "#e377c2", 
+                    "name": "osx", 
+                    "size": 9357
+                }, 
+                {
+                    "colour": "#ff7f0e", 
+                    "name": "ubuntu", 
+                    "size": 7527
+                }
+            ]
+        }, 
+        {
+            "name": "Meta Stack Overflow", 
+            "children": [
+                {
+                    "colour": "#17becf", 
+                    "name": "discussion", 
+                    "size": 15665
+                }, 
+                {
+                    "colour": "#ff7f0e", 
+                    "name": "feature-request", 
+                    "size": 11660
+                }, 
+                {
+                    "colour": "#ff7f0e", 
+                    "name": "support", 
+                    "size": 10202
+                }, 
+                {
+                    "colour": "#bcbd22", 
+                    "name": "bug", 
+                    "size": 7422
+                }, 
+                {
+                    "colour": "#17becf", 
+                    "name": "status-completed", 
+                    "size": 5629
+                }
+            ]
+        }, 
+        {
+            "name": "Web Applications", 
+            "children": [
+                {
+                    "colour": "#7f7f7f", 
+                    "name": "gmail", 
+                    "size": 1356
+                }, 
+                {
+                    "colour": "#ff7f0e", 
+                    "name": "facebook", 
+                    "size": 1239
+                }, 
+                {
+                    "colour": "#2ca02c", 
+                    "name": "google", 
+                    "size": 676
+                }, 
+                {
+                    "colour": "#9467bd", 
+                    "name": "trello", 
+                    "size": 490
+                }, 
+                {
+                    "colour": "#bcbd22", 
+                    "name": "webapp-rec", 
+                    "size": 487
+                }
+            ]
+        }, 
+        {
+            "name": "Web Applications Meta", 
+            "children": [
+                {
+                    "colour": "#bcbd22", 
+                    "name": "discussion", 
+                    "size": 204
+                }, 
+                {
+                    "colour": "#2ca02c", 
+                    "name": "status-completed", 
+                    "size": 87
+                }, 
+                {
+                    "colour": "#8c564b", 
+                    "name": "support", 
+                    "size": 85
+                }, 
+                {
+                    "colour": "#d62728", 
+                    "name": "bug", 
+                    "size": 71
+                }, 
+                {
+                    "colour": "#d62728", 
+                    "name": "on-topic-definition", 
+                    "size": 31
+                }
+            ]
+        }, 
+        {
+            "name": "Arqade", 
+            "children": [
+                {
+                    "colour": "#8c564b", 
+                    "name": "skyrim", 
+                    "size": 2051
+                }, 
+                {
+                    "colour": "#ff7f0e", 
+                    "name": "diablo-3", 
+                    "size": 1969
+                }, 
+                {
+                    "colour": "#d62728", 
+                    "name": "minecraft", 
+                    "size": 1517
+                }, 
+                {
+                    "colour": "#ff7f0e", 
+                    "name": "starcraft-2", 
+                    "size": 1075
+                }, 
+                {
+                    "colour": "#8c564b", 
+                    "name": "mass-effect-3", 
+                    "size": 1008
+                }
+            ]
+        }, 
+        {
+            "name": "Arqade Meta", 
+            "children": [
+                {
+                    "colour": "#ff7f0e", 
+                    "name": "discussion", 
+                    "size": 964
+                }, 
+                {
+                    "colour": "#9467bd", 
+                    "name": "tags", 
+                    "size": 270
+                }, 
+                {
+                    "colour": "#2ca02c", 
+                    "name": "status-completed", 
+                    "size": 249
+                }, 
+                {
+                    "colour": "#8c564b", 
+                    "name": "support", 
+                    "size": 228
+                }, 
+                {
+                    "colour": "#2ca02c", 
+                    "name": "bug", 
+                    "size": 194
+                }
+            ]
+        }, 
+        {
+            "name": "Webmasters", 
+            "children": [
+                {
+                    "colour": "#17becf", 
+                    "name": "seo", 
+                    "size": 2123
+                }, 
+                {
+                    "colour": "#bcbd22", 
+                    "name": "google", 
+                    "size": 1081
+                }, 
+                {
+                    "colour": "#e377c2", 
+                    "name": "web-hosting", 
+                    "size": 677
+                }, 
+                {
+                    "colour": "#e377c2", 
+                    "name": "domains", 
+                    "size": 665
+                }, 
+                {
+                    "colour": "#8c564b", 
+                    "name": "php", 
+                    "size": 565
+                }
+            ]
+        }, 
+        {
+            "name": "Webmasters Meta", 
+            "children": [
+                {
+                    "colour": "#d62728", 
+                    "name": "discussion", 
+                    "size": 212
+                }, 
+                {
+                    "colour": "#8c564b", 
+                    "name": "support", 
+                    "size": 38
+                }, 
+                {
+                    "colour": "#17becf", 
+                    "name": "bug", 
+                    "size": 35
+                }, 
+                {
+                    "colour": "#9467bd", 
+                    "name": "feature-request", 
+                    "size": 33
+                }, 
+                {
+                    "colour": "#17becf", 
+                    "name": "status-completed", 
+                    "size": 25
+                }
+            ]
+        }, 
+        {
+            "name": "Seasoned Advice", 
+            "children": [
+                {
+                    "colour": "#ff7f0e", 
+                    "name": "baking", 
+                    "size": 581
+                }, 
+                {
+                    "colour": "#d62728", 
+                    "name": "equipment", 
+                    "size": 434
+                }, 
+                {
+                    "colour": "#e377c2", 
+                    "name": "substitutions", 
+                    "size": 407
+                }, 
+                {
+                    "colour": "#7f7f7f", 
+                    "name": "food-safety", 
+                    "size": 404
+                }, 
+                {
+                    "colour": "#17becf", 
+                    "name": "bread", 
+                    "size": 264
+                }
+            ]
+        }, 
+        {
+            "name": "Seasoned Advice Meta", 
+            "children": [
+                {
+                    "colour": "#e377c2", 
+                    "name": "discussion", 
+                    "size": 293
+                }, 
+                {
+                    "colour": "#d62728", 
+                    "name": "support", 
+                    "size": 61
+                }, 
+                {
+                    "colour": "#bcbd22", 
+                    "name": "bug", 
+                    "size": 44
+                }, 
+                {
+                    "colour": "#1f77b4", 
+                    "name": "status-completed", 
+                    "size": 36
+                }, 
+                {
+                    "colour": "#bcbd22", 
+                    "name": "tagging", 
+                    "size": 36
+                }
+            ]
+        }, 
+        {
+            "name": "Game Development", 
+            "children": [
+                {
+                    "colour": "#bcbd22", 
+                    "name": "xna", 
+                    "size": 1510
+                }, 
+                {
+                    "colour": "#ff7f0e", 
+                    "name": "c++", 
+                    "size": 972
+                }, 
+                {
+                    "colour": "#e377c2", 
+                    "name": "c#", 
+                    "size": 935
+                }, 
+                {
+                    "colour": "#bcbd22", 
+                    "name": "opengl", 
+                    "size": 906
+                }, 
+                {
+                    "colour": "#1f77b4", 
+                    "name": "2d", 
+                    "size": 737
+                }
+            ]
+        }, 
+        {
+            "name": "Game Development Meta", 
+            "children": [
+                {
+                    "colour": "#7f7f7f", 
+                    "name": "discussion", 
+                    "size": 184
+                }, 
+                {
+                    "colour": "#e377c2", 
+                    "name": "bug", 
+                    "size": 43
+                }, 
+                {
+                    "colour": "#ff7f0e", 
+                    "name": "feature-request", 
+                    "size": 37
+                }, 
+                {
+                    "colour": "#ff7f0e", 
+                    "name": "support", 
+                    "size": 32
+                }, 
+                {
+                    "colour": "#9467bd", 
+                    "name": "questions", 
+                    "size": 32
+                }
+            ]
+        }, 
+        {
+            "name": "Photography", 
+            "children": [
+                {
+                    "colour": "#8c564b", 
+                    "name": "lens", 
+                    "size": 857
+                }, 
+                {
+                    "colour": "#2ca02c", 
+                    "name": "equipment-recommendation", 
+                    "size": 681
+                }, 
+                {
+                    "colour": "#1f77b4", 
+                    "name": "canon", 
+                    "size": 566
+                }, 
+                {
+                    "colour": "#8c564b", 
+                    "name": "nikon", 
+                    "size": 450
+                }, 
+                {
+                    "colour": "#17becf", 
+                    "name": "software", 
+                    "size": 307
+                }
+            ]
+        }, 
+        {
+            "name": "Photography Meta", 
+            "children": [
+                {
+                    "colour": "#bcbd22", 
+                    "name": "discussion", 
+                    "size": 419
+                }, 
+                {
+                    "colour": "#d62728", 
+                    "name": "featured-photo", 
+                    "size": 125
+                }, 
+                {
+                    "colour": "#17becf", 
+                    "name": "bug", 
+                    "size": 59
+                }, 
+                {
+                    "colour": "#1f77b4", 
+                    "name": "feature-request", 
+                    "size": 44
+                }, 
+                {
+                    "colour": "#d62728", 
+                    "name": "support", 
+                    "size": 33
+                }
+            ]
+        }, 
+        {
+            "name": "Cross Validated", 
+            "children": [
+                {
+                    "colour": "#d62728", 
+                    "name": "r", 
+                    "size": 2654
+                }, 
+                {
+                    "colour": "#17becf", 
+                    "name": "regression", 
+                    "size": 1622
+                }, 
+                {
+                    "colour": "#ff7f0e", 
+                    "name": "time-series", 
+                    "size": 946
+                }, 
+                {
+                    "colour": "#8c564b", 
+                    "name": "machine-learning", 
+                    "size": 810
+                }, 
+                {
+                    "colour": "#8c564b", 
+                    "name": "distributions", 
+                    "size": 691
+                }
+            ]
+        }, 
+        {
+            "name": "Cross Validated Meta", 
+            "children": [
+                {
+                    "colour": "#d62728", 
+                    "name": "discussion", 
+                    "size": 309
+                }, 
+                {
+                    "colour": "#e377c2", 
+                    "name": "support", 
+                    "size": 57
+                }, 
+                {
+                    "colour": "#bcbd22", 
+                    "name": "tags", 
+                    "size": 43
+                }, 
+                {
+                    "colour": "#e377c2", 
+                    "name": "feature-request", 
+                    "size": 37
+                }, 
+                {
+                    "colour": "#1f77b4", 
+                    "name": "bug", 
+                    "size": 34
+                }
+            ]
+        }, 
+        {
+            "name": "Mathematics", 
+            "children": [
+                {
+                    "colour": "#7f7f7f", 
+                    "name": "homework", 
+                    "size": 7187
+                }, 
+                {
+                    "colour": "#d62728", 
+                    "name": "calculus", 
+                    "size": 5548
+                }, 
+                {
+                    "colour": "#2ca02c", 
+                    "name": "linear-algebra", 
+                    "size": 5156
+                }, 
+                {
+                    "colour": "#17becf", 
+                    "name": "real-analysis", 
+                    "size": 4870
+                }, 
+                {
+                    "colour": "#ff7f0e", 
+                    "name": "probability", 
+                    "size": 4281
+                }
+            ]
+        }, 
+        {
+            "name": "Mathematics Meta", 
+            "children": [
+                {
+                    "colour": "#ff7f0e", 
+                    "name": "discussion", 
+                    "size": 1008
+                }, 
+                {
+                    "colour": "#d62728", 
+                    "name": "support", 
+                    "size": 400
+                }, 
+                {
+                    "colour": "#d62728", 
+                    "name": "bug", 
+                    "size": 231
+                }, 
+                {
+                    "colour": "#e377c2", 
+                    "name": "tex", 
+                    "size": 214
+                }, 
+                {
+                    "colour": "#1f77b4", 
+                    "name": "feature-request", 
+                    "size": 203
+                }
+            ]
+        }
+    ]
+}
