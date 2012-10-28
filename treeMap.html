@@ -106,7 +106,7 @@ var svg = d3.select("#body").append("div")
   .append("svg:g")
     .attr("transform", "translate(.5,.5)");
 
-d3.json("siteTagWheel.json", function(data) {
+d3.json("treeMap.json", function(data) {
   node = root = data;
 
   var nodes = treemap.nodes(root)

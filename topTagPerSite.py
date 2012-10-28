@@ -40,7 +40,7 @@ for site in siteNames:
 finalData = {"name": "Stack Exchange"}
 finalData["children"] = siteTagList
 
-with open('siteTagWheel.json', 'wb') as fp:
+with open('treeMap.json', 'wb') as fp:
     json.dump(finalData, fp, indent=4)
  
 
